@@ -1,0 +1,17 @@
+Zookeeper
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Kafka
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Messages
+.\bin\windows\kafka-console-consumer.bat --topic order_updates --bootstrap-server localhost:9092 --from-beginning
+.bin\windows\kafka-console-consumer.bat --topic order_updates --bootstrap-server localhost:9092 --from-beginning
+
+
+Topics
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+
+
+

@@ -1,0 +1,18 @@
+POST
+curl -X POST http://localhost:8080/orders -H "Content-Type: application/json"  -d "{\"customerName\": \"Customer1\", \"items\": [\"Item1\", \"Item3\"], \"totalPrice\": 100.00, \"status\": \"PLACED\"}"
+curl -X POST http://localhost:8080/orders -H "Content-Type: application/json"  -d "{\"customerName\": \"Customer2\", \"items\": [\"Item1\", \"Item4\"], \"totalPrice\": 150.00, \"status\": \"PLACED\"}"
+curl -X POST http://localhost:8080/orders -H "Content-Type: application/json"  -d "{\"customerName\": \"Customer3\", \"items\": [\"Item1\", \"Item3\"], \"totalPrice\": 100.00, \"status\": \"PLACED\"}"
+
+
+GET
+curl -X GET http://localhost:8080/orders/67c7167d3e73993004b0070e
+curl -X GET http://localhost:8080/orders/67c719ebc1531b0c43eec055
+curl -X GET http://localhost:8080/orders/67c719ebc1531b0c43eec056
+*All Orders
+curl -X GET http://localhost:8080/orders
+
+PUT
+curl -X PUT "http://localhost:8080/orders/67c719ebc1531b0c43eec055/status?status=DELIVERED"
+
+
+
