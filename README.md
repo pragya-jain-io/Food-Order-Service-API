@@ -1,4 +1,5 @@
 # Food Order Service API
+### Status: In Progress
 
 This project is a real-time food order processing system built using Kotlin, Spring Boot (WebFlux), MongoDB, and Kafka.
 
